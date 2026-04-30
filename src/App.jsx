@@ -84,17 +84,9 @@ export default function App() {
 
     }, [temperature, occupancy, mode, override, customRuleActive]);
 
-    // --- UI LAYOUT ---
     return (
         <main className="relative min-h-screen overflow-hidden bg-slate-50 px-4 py-8 font-sans text-slate-800 sm:px-6 lg:px-8">
-            {/* soft light gradients */}
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_15%,rgba(59,130,246,0.16),transparent_30%),radial-gradient(circle_at_85%_10%,rgba(16,185,129,0.14),transparent_28%),radial-gradient(circle_at_75%_85%,rgba(251,191,36,0.14),transparent_30%)]"/>
-
-            {/* subtle grid */}
-            <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(15,23,42,0.045)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.045)_1px,transparent_1px)] bg-[size:48px_48px]"/>
-
-            {/* readability overlay */}
-            <div className="pointer-events-none absolute inset-0 bg-white/50"/>
 
             <div className="relative z-10 mx-auto max-w-6xl space-y-6">
                 <DashboardHeader/>
@@ -136,6 +128,7 @@ export default function App() {
                     </div>
                 </div>
             </div>
+
         </main>
     );
 }

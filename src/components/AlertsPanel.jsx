@@ -7,8 +7,8 @@ export default function AlertsPanel({alerts}) {
                 </h2>
                 {alerts.length > 0 && (
                     <span className="bg-blue-600 text-white text-[10px] px-2 py-0.5 rounded-full font-bold animate-pulse">
-            Live
-          </span>
+                        Live
+                    </span>
                 )}
             </div>
 
@@ -29,8 +29,8 @@ export default function AlertsPanel({alerts}) {
                                 key={idx}
                                 className={`relative group transition-all duration-300 p-4 rounded border animate-fade-in shadow-sm
                   ${isLatest
-                                    ? 'bg-blue-50/60 border-blue-200/50 shadow-blue-200/20'
-                                    : 'bg-white/40 border-white/60 hover:bg-white/60'
+                                    ? 'bg-blue-50 border-blue-200/50 shadow-blue-200/20'
+                                    : 'bg-white border-white hover:bg-white'
                                 }`}
                             >
                                 {/* Facebook-style Blue Dot for the latest notification */}
